@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --b:#000;
+    --c:rgb(236, 230, 230);
+    --p:rgb(248, 224, 7);
+    --o: #FF9B00;
+
+}
+h1,h2,h4{
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 700;
+
+}
+ul{
+    list-style: none;
+}
+button{
+    
+    background-color: var(--p);
+    text-decoration: none;
+    width:200px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: var(--b);
+    padding: 5px;
+}
+a:hover{
+    color: var(--b);
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h2::before{content: '';
+    border-top:2px solid var(--o);
+    border-left:2px solid var(--o);
+    display: inline;
+    height: 29px;
+    position: absolute;
+    width: 45px;
+    margin: -9px -20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--c);
+    text-shadow: 11px 6px 7px white;
+    transition: 2s;
+    text-transform: uppercase;
+}
+
+
+.top-banner{
+    background-image: linear-gradient(rgba(0,0,0,66%),rgba(0,0,0,41%)), url(../img/bg1.png);
+    width:100%;
+    height:90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+
+
+}
+.home-quote{
+    position:absolute;
+    top:40%;
+    left:15%;
+}
+.home-quote h1{
+    color:var(--c);
+}
+.home-quote p{
+    color:var(--o)
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border: none;
+}
+.card img{
+    overflow: hidden;
+    height: 300px;
+}
+.card-title,.card-text{
+    color:orange;
+}
+.card-text2{
+    color:green;
+}
+.c1{
+    flex-basis: 20%;
+}
+.about{
+    background-color: var(--b);
+    color: var(--c); 
+    text-align: center;
+}
+.qq{
+    color: green;
+}
+.contact{
+    background-color: var(--b);
+    color: var(--c);
+}
+.contact ul{
+    padding: 0;
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	box-shadow: 0 2px 20px 0 rgba(0 0 0 / 9% );
+	background-color:black!important;
+    color: black!important;
+	animation: 500ms ease-in-out 2s normal none 1 running fadingInDown;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
